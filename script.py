@@ -18,6 +18,8 @@ def do_it(index):
 
 	#***********OHLC SETUP************
 	f = pandas.DataFrame(f, columns=["Open","High","Low","Close"])
+	f1 = pandas.DataFrame(f, columns=["Open","High","Low","Close"])
+	f2 = pandas.DataFrame(f, columns=["Open","High","Low","Close"])
 
 	open = numpy.array(f['Open'], dtype=float)
 	high = numpy.array(f['High'], dtype=float)
@@ -28,18 +30,18 @@ def do_it(index):
 
 
 	#**********OSCILLATORI**********
-	# real = SMA(close, timeperiod=30)
-	f['SMA_20'] = talib.SMA(close, 20)
-	f['SMA_50'] = talib.SMA(close, 50) 
-
 	#macd, macdsignal, macdhist = MACD(close, fastperiod=12, slowperiod=26, signalperiod=9)
-	f['macd'], f['macdsignal'], f['macdhist'] = talib.MACD(close, fastperiod=12, slowperiod=26, signalperiod=9)
+	f['macd_cla'], f['macdsignal_cla'], f['macdhist_cla'] = talib.MACD(close, fastperiod=12, slowperiod=26, signalperiod=9)
+	f['macd_sh'], f['macdsignal_sh'], f['macdhist_sh'] = talib.MACD(close, fastperiod=5, slowperiod=35, signalperiod=5)
 
 	#real = CCI(high, low, close, timeperiod=14)
-	f['cci'] = talib.CCI(high, low, close, timeperiod=14)
+	f['cci_14'] = talib.CCI(high, low, close, timeperiod=14)
+	f['cci_20'] = talib.CCI(high, low, close, timeperiod=20)
 
 	#real = RSI(close, timeperiod=14)
-	f['rsi'] = talib.RSI(close, timeperiod=14)
+	f['rsi_7'] = talib.RSI(close, timeperiod=7)
+	f['rsi_14'] = talib.RSI(close, timeperiod=14)
+	f['rsi_21'] = talib.RSI(close, timeperiod=21)
 
 
 
@@ -89,12 +91,10 @@ def do_it(index):
 	#"Shooting Star"
 	integer11 = talib.CDLSHOOTINGSTAR(open, high, low, close)
 	f['CDLSHOOTINGSTAR'] = integer11
-	
-	f1 = f.iloc[65:,:]
 
-	f1.to_csv("results/" + index + ".csv")
+	f.to_csv("results/" + index + ".csv")
 	
 
 	
-for i in ['PIA.MI']:#,'GEO.MI','SO.MI','ERG.MI','SPM.MI','FCT.MI','AST.MI','CAI.MI','CPR.MI']:
+for i in ['PIA.MI','GEO.MI','SO.MI','ERG.MI','SPM.MI','FCT.MI','AST.MI','CAI.MI','CPR.MI']:
 	do_it(i)

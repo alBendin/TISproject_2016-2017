@@ -1,0 +1,23 @@
+MACD:
+-foglio per MACD 12.24.9 e MACD 5.35.5 + grafico excel 
+-linea y=0
+-evidenziare cambio segno hist
+
+CCI:
+-foglio per CCI 14 e CCI 20 + grafico excel 
+-linea y=100 e y=-100
+-evidenziare celle oltre range di 2 colori a seconda del verso
+
+RSI:
+-foglio per RSI 7, RSI 14 e RSI 21 + grafico excel 
+-linea y=70 e y=30 e y=50
+-evidenziare celle oltre range di 2 colori a seconda del verso
+-evidenziare il cross del 50 con altro colore
+
+
+
+PATTERN:
+-foglio per patterns
+-celle vuote se valore=0
+-cella "+" se valore="+100"
+-cella "-" se vvalore="-100"
