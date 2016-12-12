@@ -1,0 +1,36 @@
+Buongiorno,
+
+scusate per l’attesa, ho sentito le altre persone del gruppo ed ecco le informazioni necessarie per iniziare a lavorare al progetto di TIS:
+
+* Libreria da utilizzare: TA-Lib
+
+Qui c’è una guida per l’installazione di Ta-Lib: https://goldenjumper.wordpress.com/2014/03/30/installing-ta-lib-os-x/
+
+Questa è la documentazione per Ta-Lib: http://mrjbq7.github.io/ta-lib/index.html
+
+In allegato anche un piccolo esempio in Python su come usare i metodi di Ta-Lib su oscillatori e pattern (scritto da due studenti che stanno lavorando su questo argomento).
+
+* Periodo di analisi: 1.11.2015 - 31.10.2016
+
+* Aziende da considerare (in ordine decrescente di importanza): PIA.MI, GEO.MI, SO.MI. Iniziate con queste tre e poi, a seconda dei risultati, vorremmo considerare anche ERG.MI, SPM.MI, FCT.MI, AST.MI, CAI.MI, CPR.MI.
+
+* Metodi della libreria da confrontare:
+*** Oscillatori: MACD, CCI e RSI; si potrebbero provare diversi tuning (numero di giorni) e vedere quali funzionano meglio.
+*** Figure:
+-Upside/Downside Gap Three Method
+-Evening/Morning Star;
+-Engulfing Pattern;
+
+a seconda dell’effort richiesto, vorremmo poi considerare anche:
+-Dark Cloud Cover;
+-Doji;
+-Hammer;
+-Hanging Man;
+-Harami;
+-Piercing Line;
+-Shooting Star.
+
+In allegato anche un report svolto da due studenti che stanno lavorando con noi sull’argomento e che introduce l’argomento dell’analisi tecnica e oscillatori e pattern.
+
+per qualunque dubbio fatemi sapere
+a presto
