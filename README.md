@@ -35,3 +35,16 @@ The analysis was carried out considering the following:
 * AST.MI
 * CAI.MI
 * CPR.MI
+
+##Time window
+From 1.11.2015 to 31.10.2016
+
+
+##How to read the results
+In the "results" folder there is a .xlxs file for every company.  
+The granularity of the analysis is daily; thus every row in the resulting files represents a day.  
+Each file contains five sheets. The first five columns are repeated in all the sheets (Date, OHLC).
+
+**Sheets content**  
+1. RAW data  
+2. Pattern matching: every column represents a pattern; if a match is found we highlighted whether the prices of the shares were in a bullish (rising) or bearish (falling) trend respectively using the "UP" and "DOWN" keyword. If the cell is empty there is no match with the pattern for the corresponding day.  
