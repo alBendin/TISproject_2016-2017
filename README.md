@@ -1,6 +1,7 @@
 #Technologies for Information Systems
 
-Course project, year 2016/2017
+Course project, year 2016/2017  
+Politecnico di Milano
 
 Students: Francesco Giarola, Alberto Bendin
 
