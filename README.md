@@ -42,14 +42,24 @@ From 1.11.2015 to 31.10.2016
 
 
 ##How to interpret the results
-In the "results" folder there is a .xlxs file for every company.  
-The granularity of the analysis is daily; thus every row in the resulting files represents a day.  
-Each file contains five sheets. The first five columns are repeated in all the sheets (Date, OHLC).
+In the "results" folder there is a .xlxs file for every company named "\*\*(\*).MI" (name of the stock).  
+The granularity of the analysis is daily; thus every row in the resulting files represents a day.
+
+We considered that for analyses in this field could be important to give the user the ability to dynamically choose the time scope of the analysis for instance to better highlight behavioral patterns over typical time periods like quarter of the year, semester, etc.
+For this reason we setup a way to browse this files consisting of two steps: the user first selects the sheet for the analysis he/she is interested in (PATTERN|MACD|CCI|RSI), here he/she chooses the time period which is the scope for the analysis, then the user switches to the result sheet for that specific analysis ("STATISTICS (PATTERN|MACD|CCI|RSI)").
+Since we have the pattern analysis and three indicators we have 8 sheets for the dual structure described above (4 couples of (setup-result) sheets for the 1+3 analyses).
+
+Of course if the user does not select any filter for the date the default analysis is done over the whole year.
+
+The first column represents the date and can be filtered by the user dynamically to possibly match analysis over interesting time periods as the quarter of the year or semester.
+
+Each file contains a total of nine sheets. The first five columns are the raw data (Date, OHLC) used to compute the different statistics and are repeated in the sheets number 1, 2, 4, 6, 8.
 
 **Sheets content**  
 
-1. RAW data.  
-2. **Pattern matching:** every column represents a pattern; if a match has been found we highlighted whether the prices of the shares were in a bullish (rising) or bearish (falling) trend respectively using the _"UP"_ and _"DOWN"_ keywords. If the cell is empty there is no match with the pattern for the corresponding day.  
+1. **RAW data**. 
+2. **PATTERNS:** every column represents a pattern; if a match has been found we highlighted whether the prices of the shares were in a bullish (rising) or bearish (falling) trend respectively using the _"UP"_ and _"DOWN"_ keywords. If the cell is empty there is no match with the pattern for the corresponding day. 
+2. **STATISTICS PATTERNS:** 
 3. **MACD:** we tried two different setups for this indicator. 
   * **Classical:** the most commonly used values are 12, 26, and 9 days, that is, MACD(12,26,9), where the period settings of (12, 26, 9) represent 2 weeks, 1 month and one and a half week.
   * **Short term:** one of the popular short-term set-ups that is the (5,35,5).  
