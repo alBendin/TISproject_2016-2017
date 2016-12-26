@@ -41,7 +41,7 @@ The analysis was carried out considering the following:
 From 1.11.2015 to 31.10.2016
 
 ###Data retrieval and processing
-We wrote a python script which uses the TA-lib implementation for python to gather all the raw data about the above-mentioned list of patterns and oscillators.  
+We wrote a python script which uses the _TA-lib_ implementation for python to gather all the raw data about the above-mentioned list of patterns and oscillators.  
 Then we exported the resulting output to CSV files (in _results/RAW/_) where every figure and indicator is assigned to an attribute.  
 The rest of the elaboration has been carried out inside Microsoft Excel where we used some filters and formulas to achieve the expected results (the .xlxs files in _results/_ named "\*\*(\*).MI" (name of the stock)).  
 Finally we created a Visual Basic macro to export the data to two summary files, one related to the patterns and the other about the indicators ("Stats Indicators.xlxs" and "Stats Patterns.xlxs" in _results/_).
