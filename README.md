@@ -76,3 +76,9 @@ The first five columns are the raw data (Date, OHLC) used to compute the differe
 8. **RSI:** three configurations were tested; the usual 14 days time period and two other settings for 7 and 21 days.  
  Movements above 70 are considered overbought and again highlighted in GREEN, while an oversold condition would be a move under 30, highlighted in RED. We also marked in YELLOW the days whose RSI crossed the 50 line which is the RSI midpoint value. This because often traders treat RSI crossings above and below the 50 level as buying and selling signals respectively.
 9. **STATISTICS RSI:** results of the RSI analysis.
+
+
+Up to now the analysis has been from the point of view of the single company (indeed being a file for every company).  
+We also aggregated some statistics and created through a VBA macro two summaries, one for the patterns and one for the oscillators.  
+Both these two Excel workbooks contain "pre-compiled" data, meaning the user is no more able to dynamically select the time scope, but he/she is offered already the following categorization of the outcomes: by quarter (trimester), 4-months, semester, year.  
+Moreover he/she is still given the possibility to browse by company (one sheet for every stock index); yet the focus is on the aggregated data here obviously, which are presented in three sheets, one about the AVERAGE, one on the MAXIMUM and the last on the MINIMUM of all the values.
