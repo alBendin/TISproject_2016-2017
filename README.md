@@ -81,4 +81,4 @@ The first five columns are the raw data (Date, OHLC) used to compute the differe
 Up to now the analysis has been from the point of view of the single company (indeed being a file for every company).  
 We also aggregated some statistics and created through a VBA macro two summaries, one for the patterns and one for the oscillators.  
 Both these two Excel workbooks contain "pre-compiled" data, meaning the user is no more able to dynamically select the time scope, but he/she is offered already the following categorization of the outcomes: by quarter (trimester), 4-months, semester, year.  
-Moreover he/she is still given the possibility to browse by company (one sheet for every stock index); yet the focus is on the aggregated data here obviously, which are presented in three sheets, one about the AVERAGE, one on the MAXIMUM and the last on the MINIMUM of all the values.
+Moreover he/she is still given the possibility to browse by company (one sheet for every stock index); yet the focus is on the aggregated data here obviously, which are presented in the TOTAL sheet.
